@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Invadems</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="universities_fragment_label">Universities in UAE</string>
+    <string name="university_details_fragment_label">University Details</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="icon_refresh_lable">"refresh "</string>
+
+</resources>

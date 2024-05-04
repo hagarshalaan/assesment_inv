@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".presentation.university_details.UniversityDetailsFragment">
+
+
+        <!-- University Name -->
+        <TextView
+            android:id="@+id/textUniversityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_below="@+id/btnRefresh"
+            android:textStyle="bold" />
+
+        <!-- University State -->
+        <TextView
+            android:id="@+id/textUniversityState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="University State"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/textUniversityName"/>
+
+        <!-- Country and Country Code Row -->
+        <LinearLayout
+            android:id="@+id/layoutCountryInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/textUniversityState"
+            app:layout_constraintTop_toBottomOf="@+id/textUniversityState">
+
+            <TextView
+                android:id="@+id/textCountry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Country" />
+
+            <TextView
+                android:id="@+id/textCountryCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:text="Country Code"
+                android:textAlignment="viewEnd" />
+        </LinearLayout>
+
+        <!-- Web Page -->
+        <TextView
+            android:id="@+id/textWebPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/layoutCountryInfo"
+            />
+
+        <!-- Refresh Button -->
+        <ImageButton
+            android:id="@+id/btnRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_refresh_24"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/icon_refresh_lable" />
+
+    </RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/UniversitiesFragment">
+
+    <fragment
+        android:id="@+id/UniversitiesFragment"
+        android:name="com.flag.invadems.presentation.universities.UniversitiesFragment"
+        android:label="@string/universities_fragment_label"
+        tools:layout="@layout/universities_fragment">
+
+        <action
+            android:id="@+id/action_UniversityFragment_to_DetailsFragment"
+            android:name="com.flag.presentation.UniversitiesFragmentDirection"
+            app:destination="@id/UniversityDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/UniversityDetailsFragment"
+        android:name="com.flag.invadems.presentation.university_details.UniversityDetailsFragment"
+        android:label="@string/university_details_fragment_label"
+        tools:layout="@layout/university_details_fragment">
+        <argument
+            android:name="university"
+            app:argType="com.flag.module.data.models.University" />
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            android:name="com.flag.module.presentation.UniversityDetailsFragment"
+            app:destination="@id/UniversitiesFragment" />
+    </fragment>
+</navigation>
