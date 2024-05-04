@@ -11,6 +11,7 @@ import androidx.fragment.app.setFragmentResult
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.flag.invadems.Constants.DATA
 import com.flag.invadems.Constants.FRAGMENT_KEY_ARGS
 import com.flag.invadems.databinding.UniversitiesFragmentBinding
 import com.flag.invadems.presentation.universities.adapter.UniversitiesAdapter
