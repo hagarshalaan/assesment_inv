@@ -3,7 +3,7 @@
 Project Overview
 This Android project is developed following the MVVM clean architecture using Kotlin and XML with Jetpack components. It consists of two modules:
 
-App Module: Contains the core application logic, user interface, and primary screens.
+App Module: Contains the core application two screens.
 Management Module: Includes additional functionalities related to DI, database, DAO, networking, models, and domain logic.
 App Module
 The app module serves as the primary module for the application, responsible for core functionalities and user interaction. It provides the following screens:
